@@ -9,21 +9,26 @@ Posner Cueing Task, also known as "Ponser Paradigm, is a neuropsychological test
 Task process goes like this:
 	Subjects are required to fix the gaze at the center (with a fixation point) on the screen. A cue is displayed at either right or left side of screen in a brief interval. Then a target stimulus is displayed either in the region of the cue or not. Subject then response once they detect the target stimulus.
 
-	+ Cues:
-		Type:
-		- endogenous cue: present in central vision field or even focus region, indicating right or left screen;
-		- exogenous cue: present in periperal vision field, highlighting left or right region of the screen
++ Cues:
+> Type:
 
-		Format:
-			arrows, flashing shape, highlighting space or frame.
+	- endogenous cue: present in central vision field or even focus region, indicating right or left screen;
+	
+	- exogenous cue: present in periperal vision field, highlighting left or right region of the screen；
 
-	+ Valid/Invalid Cue:
-		- valid cue: cue and target stimulus present at the same region;
-		- Invalid cue: cue and target stimulus present at different region / opposite region.
+> Format:
+	arrows, flashing shape, highlighting space or frame.
+
++ Valid/Invalid Cue:
+
+	- valid cue: cue and target stimulus present at the same region;
+	
+	- Invalid cue: cue and target stimulus present at different region / opposite region.
 
 In previous research, it is found that valid cue could substantially decrease response time to target stimulus, which indicates attention shift caused by space cue.
 
 This project concerned conditions in:
+
 + validation of cue;
 + cue presenting interval length;
 + Invalid cue distance to target stimulus;
@@ -32,25 +37,25 @@ This project concerned conditions in:
 Response time will be recorded in each trial;
 
 The following analysis concerns difference on:
+
 + (1) Cue validation: 
 	 RTs<sub>Valid_cue</sub>" <=> RTs<sub>Invalid_cue</sub>" 
 
-    <div align=center>
-		<img width="" height="" src="intro_cue_validation.png">
-    </div>
+<div align=center>
+	<img width="1300" height="300" src="https://github.com/CnDE-M/Psychophysics-PosnerCueingTask/blob/master/result_image/intro_cue_validation.png">
+</div>
 
 + (2) Cue interval length:
-	"Valid cue": RTs<sub>Long_cue</sub> <=> <sub>Short_cue</sub>;
-	"Invalid cue": RTs<sub>Long_cue</sub> <=> <sub>Short_cue</sub>;
-
+	"Valid cue": RTs <sub>Long_cue</sub> <=> RTs <sub>Short_cue</sub>;
+	"Invalid cue": RTs <sub>Long_cue</sub> <=> RTs <sub>Short_cue</sub>;
 
 + (3) Invalid cue distance to target stimulus:
 	  Polar distance
 	  RTs <=> θ & | d<sub>cue</sub> - d<sub>target</sub> |;
 
-	<div align=center>
-		<img width="" height="" src="intro_cue_target_distance.png">
-	</div>
+<div align=center>
+	<img width="500" height="351" src="https://github.com/CnDE-M/Psychophysics-PosnerCueingTask/blob/master/result_image/intro_cue_target_distance.png">
+</div>
 
 + (4) Cue distance to focus:
       Euclidean distance
@@ -78,9 +83,9 @@ For each condition:
 
 	Here shows an screen display example (green grid will not shown in formal experiment)
 
-	<div align=center>
-		<img width="" height="" src="intro_screen_display.png">
-	</div>
+<div align=center>
+	<img width="525" height="378" src="https://github.com/CnDE-M/Psychophysics-PosnerCueingTask/blob/master/result_image/intro_screen_display.png">
+</div>
 
 
 2. Experiment Process (according to 4 questions to be solved):
@@ -89,13 +94,13 @@ For each condition:
 	 + Condition number:
 	   - Cue must be present in all grid 4 times for each (144 trial in total);
 	   For Invalid cue, target stimulus present 2 times at the same side, 2 times at the other side, and the specific coordinate is randomly generated.
-
 	   - valid cue (144); invalid cue(144);
 	   - display in random sequence;
+	   
 	 + Cue Intervals: 100 ms; 300 ms
 
-	 Total trial numbers: 
-	 36 grids × 4 repetition × 2(valid or not) × 2 (internals) = 576. 
+Total trial numbers: 
+	36 grids × 4 repetition × 2(valid or not) × 2 (internals) = 576. 
 
 
 3. Subject and Response Collection:
@@ -111,81 +116,82 @@ Experiment will collect:
 (6) Response time
 And recorded in excel for further analysis
 
-4. Statistical Analysis
-
-	t-test
-
 ## Result
 
 1. Design Change based on subject's report
+	One subject(the author) conducts the experiments for 3 times, with some revision on design for each time
 
-One subject(the author) conducts the experiments for 3 times, with some revision on design for each time
 + 1<sup>st</sup> Round
 
-	Target Size: 20; cue intervals [0.5, 1]; fixation cross size: 1;
-	Report:
-		(1) Fixation size is too big for focus stay
-		(2) Cue interval time is too short for attention stable after shifting to cue;
-		(3) Target dot size is too big that makes it so distinguishable;
-		(4) After presenting the cue, subjects should deliberately shift their attention to the cue square area, as if they are expecting the target presenting within the cue region;
+<p align="center">*Target Size: 20; cue intervals [0.5, 1]; fixation cross size: 1;*</p>
+	
+Report:
+
++ Fixation size is too big for focus stay
++ Cue interval time is too short for attention stable after shifting to cue;
++ Target dot size is too big that makes it so distinguishable;
++ After presenting the cue, subjects should deliberately shift their attention to the cue square area, as if they are expecting the target presenting within the cue region;
 
 + 2<sup>en</sup> Round
 
-	Target Size: **10**; cue intervals **[0.8, 1.2]**; fixation cross size: **0.5**;
-	Report:
-	(1) The sudden disappearance of cue will alert subject that target is present, and they will unconsciouly press the key after they detecting target.
+<p align="center">*Target Size: **10**; cue intervals **[0.8, 1.2]**; fixation cross size: **0.5**;*</p>
+	
+Report:
++ The sudden disappearance of cue will alert subject that target is present, and they will unconsciouly press the key after they detecting target.
 
-	- In the next round, cue will continue showing after target appear;
+In the next round, cue will continue showing after target appear;
 
-	(2) In the first 2 rounds, subject need to press key every time a trial start.
++ In the first 2 rounds, subject need to press key every time a trial start.
 
-	- In the next round, subject don't need to press a key to start each trial, instead cue will continue shifting its position. For subject to prepare before each trial, the cue interval will all extend 1s.
+In the next round, subject don't need to press a key to start each trial, instead cue will continue shifting its position. For subject to prepare before each trial, the cue interval will all extend 1s.
 
 + 3<sup>rd</sup> Round
 
-	Target Size: 10; cue intervals [0.8, 1.2]+**1**; fixation cross size: 0.5;
+	<p align="center">*Target Size: 10; cue intervals [0.8, 1.2]+**1**; fixation cross size: 0.5;*</p>
 	**Cue will continue showing after target appear**;
 	**Trials keep processing with cue square shifting position**;
 	For every 50 trials, experiment will pause so subject could rest and refresh.
-	Report:
-	(1) To improve attention shifting to cue square effectivity, subjects could keep expecting to see stimulus at the center of cue square, this trick is helpful, because with the cue presenting in the screen, subject's attention could still wandering around the screen without couscious control.
-	(2) The fixation could still be smaller, like useing a dot instead of a cross
-	(3) When performing, subjects shouldn't have other thought in mind which will disturb one's attention.
+	
+Report:
+
++ To improve attention shifting to cue square effectivity, subjects could keep expecting to see stimulus at the center of cue square, this trick is helpful, because with the cue presenting in the screen, subject's attention could still wandering around the screen without couscious control.
++ The fixation could still be smaller, like useing a dot instead of a cross
++ When performing, subjects shouldn't have other thought in mind which will disturb one's attention.
 
 2. Statistical analysis 
-
-3 rounds' dataset is analysed separately and displayed one by one.
-
+	3 rounds' dataset is analysed separately and displayed one by one.
 
 a) Cue Validation ~ RTs
 
 <div align=center>
-	<img width="" height="" src="validation_2.png">
+	<img width="1800" height="300" src="https://github.com/CnDE-M/Psychophysics-PosnerCueingTask/blob/master/result_image/validation_2.png">
 </div>
 
 
 b) Cue Intenal Length ~ RTs
 
 <div align=center>
-	<img width="" height="" src="cue_time.png">
+	<img width="1800" height="300" src="https://github.com/CnDE-M/Psychophysics-PosnerCueingTask/blob/master/result_image/cue_time.png">
 </div>
 
 
 c) Cue distance to target:
 
 <div align=center>
-	<img width="" height="" src="cue_target_distance.png">
+	<img width="1800" height="300" src="https://github.com/CnDE-M/Psychophysics-PosnerCueingTask/blob/master/result_image/cue_target_distance.png">
 </div>
 
 
 d) Cue distance to focus:
 
-<div align=center>
-	<img width="" height="" src="cue_focus_distance_1.png">
-</div>
 
 <div align=center>
-	<img width="" height="" src="cue_focus_distance_2.png">
+	<img width="1800" height="300" src="https://github.com/CnDE-M/Psychophysics-PosnerCueingTask/blob/master/result_image/cue_focus_distance_1.png">
+</div>
+
+
+<div align=center>
+	<img width="1800" height="300" src="https://github.com/CnDE-M/Psychophysics-PosnerCueingTask/blob/master/result_image/cue_focus_distance_2.png">
 </div>
 
 
